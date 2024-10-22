@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(135deg, #857e7e, #ffffff, #ffffff);
+    background: linear-gradient(135deg, #d6d0d0 200%, #faf4f4 100%);
 }
 .color-nav{
     display: flex;
