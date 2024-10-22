@@ -24,3 +24,15 @@ header{
 p{
     color: black;
 }
+.titulosnosotros{
+    background-color: #3d3d3d;
+    padding: 1px;
+    width: 130px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.titulosnosotros p{
+    color: white;
+}
