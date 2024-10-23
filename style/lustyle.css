@@ -1,0 +1,30 @@
+
+.titulosnosotros{
+   background-color: #3d3d3d; 
+   width: 80px;
+   color: white;
+   padding: 5px;
+   border-radius: 20px;
+   text-align: center;
+   margin-left: 49px;
+}
+.cont-nosotros{
+    display: flex;
+}
+.pnosotros{
+    margin-top: 70px;
+    text-align: center;
+    
+}
+body{
+    background: linear-gradient(135deg, #d6d0d0 200%, #faf4f4 100%);
+    margin: 0;
+}
+.cont-misión{
+    display: flex;
+}
+.pmisión{
+    margin-top: 70px;
+    text-align: center;
+
+}
