@@ -11,3 +11,37 @@ h3{
     text-align: center;
     margin-top: 50px;
 }
+
+.contenedorpadre{
+    display: flex;
+    margin-left: 70px;
+    text-align: center;
+
+}
+img{
+    width: 200px;
+    height: 200px;  
+    border-radius: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font: 40px;
+}
+body{
+    background: linear-gradient(135deg, #d6d0d0 200%, #faf4f4 100%);
+    margin: 0;
+}
+.hijo{
+    margin: 35px;
+}
+
+.contenedor-daniel{
+   
+    display: flex;
+    margin-left: 500px;
+    text-align: center;
+
+
+}
