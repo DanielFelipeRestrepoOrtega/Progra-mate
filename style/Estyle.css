@@ -29,10 +29,11 @@ a{
     font-weight: 900;
     font: 40px;
 }
-body{
-    background: linear-gradient(135deg, #d6d0d0 200%, #faf4f4 100%);
+body {
+    background: linear-gradient(135deg, #908b8b, #ffffff);
+    height: 100vh; /* Ajusta la altura al 100% de la viewport */
     margin: 0;
-}
+    }
 .hijo{
     margin: 35px;
 }
