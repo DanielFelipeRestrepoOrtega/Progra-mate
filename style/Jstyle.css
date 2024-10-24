@@ -162,3 +162,37 @@ footer {
         padding: 10px; /* Reduce el padding en dispositivos pequeños */
     }
   }
+  h1{
+    text-align: center;
+  }
+.cnt-img{
+  margin: 0 auto;
+  display: flex;
+    
+  }
+  .frases {
+    background-color: rgb(115, 134, 141);
+    display: flex;
+    flex-direction: column; /* Esto asegura que la imagen esté encima del texto */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    height: 100vh; /* Ajusta el tamaño del contenedor si es necesario */
+    margin: 20px;
+    border-radius: 30px;
+  }
+
+  .frases a{
+    text-decoration: none;
+    color: #3d3d3d;
+  }
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px){
+    .cnt-img{
+      display: block;
+    }
+  }
+
