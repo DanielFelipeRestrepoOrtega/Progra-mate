@@ -60,3 +60,12 @@ footer li{
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
 }
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left:0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wave1.png);
+    background-size: 1000px 100px;
+}
