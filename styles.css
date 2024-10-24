@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #555;
+}
+
+.card button {
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background: #c1c5c9;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.container2 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 400px;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    text-align: center;
+    background: #565758;
+    color: white;
+    padding: 20px;
+    position: relative; /* Posicionamiento relativo para el botón */
+}
+
+.back-button {
+    position: absolute; /* Posición absoluta para el botón */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde la derecha */
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+    z-index: 10; /* Asegúrate de que esté por encima */
+}
+
+.back-button:hover {
+    background-color: #565758;
+    color: white;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    animation: fadeIn 1s;
+}
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 24px;
+}
+
+.profile-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+.profile-body {
+    padding: 20px;
+}
+
+.profile-body h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+li:hover {
+    background: #ced4da;
+    transform: translateX(5px);
+}
+
+.skills li,
+.experience li,
+.education li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+}
+
+.skills li:nth-child(1),
+.experience li:nth-child(1),
+.education li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.skills li:nth-child(2),
+.experience li:nth-child(2),
+.education li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.skills li:nth-child(3),
+.experience li:nth-child(3),
+.education li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.skills li:nth-child(4),
+.experience li:nth-child(4),
+.education li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
