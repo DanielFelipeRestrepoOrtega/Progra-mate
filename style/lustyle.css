@@ -132,3 +132,59 @@ footer {
       font-size: 1em;
     }
   }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 75px;
+  }
+  
+  .logod {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logod img {
+    height: 200px; /* Ajusta el tamaño según tus necesidades */
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .nav-nav {
+    background-color: #3d3d3d;
+    margin:0 auto;
+    padding: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+  }
+  
+  .nav-nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: larger;
+    padding: 30px;
+  }
+  
+  @media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
+    header {
+        flex-direction: column; /* Apila el logo y la navegación */
+        height: auto; /* Permite que el header se ajuste al contenido */
+    }
+  
+    .logod img {
+        height: 80px; /* Reduce el tamaño de la imagen en dispositivos pequeños */
+    }
+  
+    .nav-nav {
+        margin-right: 0; /* Elimina el margen derecho */
+        flex-direction: column; /* Apila los elementos de navegación */
+    }
+  
+    .nav-nav a {
+        padding: 10px; /* Reduce el padding en dispositivos pequeños */
+    }
+  }

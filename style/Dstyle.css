@@ -36,7 +36,7 @@ header {
 }
 
 .logod img {
-  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 200px; /* Ajusta el tamaño según tus necesidades */
   position: relative;
   margin-top: 20px;
   margin-left: 20px;
@@ -46,6 +46,7 @@ header {
   background-color: #3d3d3d;
   margin:0 auto;
   padding: 20px;
+  margin-left: 100px;
   border-radius: 20px;
 }
 
