@@ -28,6 +28,13 @@ body{
     text-align: center;
 
 }
+.cont-visión{
+  display: flex;
+}
+.pvisión{
+  margin-top: 70px;
+  text-align: center;
+}
 .cont-pa{
     display: grid;
     min-height: 100dvh;
