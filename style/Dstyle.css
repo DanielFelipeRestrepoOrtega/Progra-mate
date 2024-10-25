@@ -59,6 +59,9 @@ header {
   font-size: larger;
   padding: 30px;
 }
+.nav-nav a:hover{
+  color: #779eaa;
+}
 
 @media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
   header {
@@ -168,6 +171,7 @@ header {
   }
   h1{
     color: #444444;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
   }
   .cont-ini{
@@ -194,4 +198,42 @@ header {
     margin: 0 auto;
     font-size: larger;
     background: linear-gradient(135deg, #d6d0d0 200%, #faf4f4 100%);
+  }
+  .cont-ini3 img {
+    opacity: 2;
+    transform: scale(0.9);
+    animation: fadeInScale 1s ease infinite alternate;
+  }
+  
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section{
+    display: flex;
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto;
+   
+  }
+  section img{
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: 0.5s ease;
+  }
+  section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
   }

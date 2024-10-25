@@ -168,6 +168,9 @@ footer {
     font-size: larger;
     padding: 30px;
   }
+  .nav-nav a:hover{
+    color: #779eaa;
+  }
   
   @media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
     header {
