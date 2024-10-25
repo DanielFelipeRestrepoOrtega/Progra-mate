@@ -252,17 +252,22 @@ header {
     padding: 10px;
   }
   @media (max-width: 768px) {
-    .nav-nav{
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 1rem;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 10px;
-    }
     header{
-      display: block;
-      margin: 0 auto;
+      text-align: center;
     }
-    
+    .nav-link {
+      font-size: 14px;
+  }
+  .logod, .nav-nav {
+      margin: 10px 0;
+  }
+  .logod img {
+    max-width: 100%;
+}
+.nav-nav {
+  display: none;
+}
+.menu-hamburguesa {
+  display: block;
+}
   }
