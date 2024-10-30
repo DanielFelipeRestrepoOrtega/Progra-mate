@@ -11,6 +11,7 @@ h1 {
 .frase2 {
   text-align: center;
   font-size: 20px;
+  padding: 30px;
 }
 
 h3 {
@@ -94,7 +95,6 @@ header {
   padding: 20px;
   height: 75px;
 }
-
 .logod {
   display: flex;
   align-items: center;
@@ -244,4 +244,13 @@ footer {
   .social-icons a {
     font-size: 1em;
   }
+}
+/* Modo Oscuro */
+body.modo-oscuro {
+  background-color: #121212;
+  color: white;
+}
+
+header.modo-oscuro, footer.modo-oscuro {
+  background-color: #020202;
 }
