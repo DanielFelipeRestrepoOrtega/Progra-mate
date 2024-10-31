@@ -26,24 +26,37 @@
        </header>
     <div class="content">
         <div class="cont-fomr">
-            <form action="comunicado.html">
-                <fieldset>
-                    <label for="name" id="name">Nombre</label>
-                    <input type="name" placeholder="pepito" required>
-                    <label for="email" id="email">Correo</label>
-                    <input type="email" placeholder="pepito@gmail.com" required>
-                    <label for="Textarea">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
-                    <input type="submit">
-                </fieldset>
-            </form>
+            <form id="formularioContacto" onsubmit="validarFormulario(event)">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+              <div id="errorNombre" class="error">El nombre solo debe contener letras.</div>
+  
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+              <div id="errorEmail" class="error">Por favor, ingrese un correo electrónico válido.</div>
+  
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+              <div id="errorTelefono" class="error">El teléfono debe contener solo números y tener 10 dígitos.</div>
+  
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              <div id="errorMensaje" class="error">Por favor, ingrese un mensaje.</div> 
+              <div id="botonEnviar" class="enviar">
+              <input type="submit" value="Enviar"></div>
+        </form>
+
+        <div class="result" id="resultado"></div>
+
+
+        
         </div>
         <div class="cont-descripcion">
-            <h1>Contacte</h1>
+            <h1>Contacte con nosotros</h1>
             <p>Horarios de atencion 8:30am - 12:30pm y de 2:30pm a 6:30pm</p>
-            <p><b>Email:</b>soporteProgra-mate@gmail.com</p>
+            <p><b>Email:</b> soporteProgra-mate@gmail.com</p>
             <p><b>Telefono:</b> +57 321 398 6392</p>
-            <p><b>Dirección:</b>Cucuta Av 4 # 24-30 Caobos</p>
+            <p><b>Dirección:</b> Cucuta Av 4 # 24-30 Caobos</p>
         </div>
     </div>
 
@@ -71,6 +84,7 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
