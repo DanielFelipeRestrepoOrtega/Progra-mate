@@ -183,7 +183,9 @@ footer {
     margin: 20px;
     border-radius: 30px;
   }
-
+   .frases:hover  img {
+    transform: scale(1.1);}
+   .frases:hover:hover .infohover{transform: translateY(0);}
   .frases a{
     text-decoration: none;
     color: #3d3d3d;
