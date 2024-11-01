@@ -224,7 +224,16 @@ footer {
     .cnt-img{
       display: block;
     }
+  } 
+  .iconson {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 auto;
+    margin-left: 10px;
+
   }
+  
   .botcata{
     border: none;
     padding: 0;
