@@ -1,4 +1,28 @@
-body {
+body.light-mode.bodyy {
+  background: linear-gradient(to right, #908b8b, #ffffff);
+  color: black;
+}
+
+body.dark-mode.bodyy {
+  background: linear-gradient(to left, #0e0e0e, #474444);
+  color: white;
+  & .logod img{
+    filter: invert(1);
+  }
+  & h1{
+    color: white;
+  } & .botcata{
+    color: white;
+  }
+  & .nav-nav{
+    background-color: #d6d0d0;
+    & a{
+      color: #070606;
+    }
+  }
+}
+
+.bodyy {
   background: linear-gradient(to right, #908b8b, #ffffff);
   height: 100vh;
   width: 100%;
@@ -200,5 +224,14 @@ footer {
     .cnt-img{
       display: block;
     }
+  }
+  .botcata{
+    border: none;
+    padding: 0;
+    background: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
   }
 
