@@ -8,10 +8,19 @@ body.light-mode.bodyy {
 body.dark-mode.bodyy {
   background: linear-gradient(to left, #0e0e0e, #474444);
   color: white;
+  & .logod img{
+    filter: invert(1);
+  }
   & h1{
     color: white;
   } & .botcata{
     color: white;
+  }
+  & .nav-nav{
+    background-color: #d6d0d0;
+    & a{
+      color: #070606;
+    }
   }
 }
 
