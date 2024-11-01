@@ -51,6 +51,14 @@ a {
   font-weight: 900;
   font: 40px;
 }
+body.modo-oscuro {
+  background-color: #121212;
+  color: white;
+}
+
+header.modo-oscuro, footer.modo-oscuro {
+  background-color: #020202;
+}
 body{
   background: linear-gradient(to right, #908b8b, #ffffff);
   height: 100vh;
@@ -246,11 +254,3 @@ footer {
   }
 }
 /* Modo Oscuro */
-body.modo-oscuro {
-  background-color: #121212;
-  color: white;
-}
-
-header.modo-oscuro, footer.modo-oscuro {
-  background-color: #020202;
-}
