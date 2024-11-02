@@ -86,7 +86,7 @@ function validarFormulario(event) {
             <p><strong>Correo electrónico:</strong> ${email}</p>
             <p><strong>Teléfono:</strong> ${telefono}</p>
             <p><strong>Mensaje:</strong> ${mensaje}</p>
-            <h3>Nos pondremos en contacto lo antes posible</h3>
+            <h3>¡Nos pondremos en contacto lo antes posible! &#128522 </h3>
         `;
         resultado.style.display = 'block';
     }

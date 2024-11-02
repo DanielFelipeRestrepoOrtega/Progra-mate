@@ -3,8 +3,9 @@ body {
 }
 .bodyy {
   background: linear-gradient(to right, #908b8b, #ffffff);
-  height: 100%; /* Ajusta la altura al 100% de la viewport */
-  margin: 0;
+  height: 100vh;
+
+  width: 100%;
   transition: background 1.5s ease, color 1.5s ease;
   }
   .cont-pa{
@@ -186,6 +187,7 @@ body.dark-mode.bodyy {
   }
   & h1{
     color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
   } & .botcata{
     color: white;
   }
@@ -208,6 +210,14 @@ textarea {
     margin-top: 10px;
     color: rgb(221, 214, 214);
 }
+& .cont-descripcion{
+    background-color: rgba(56, 55, 55, 0.1);
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
   & .nav-nav{
     background-color: #cecdcd;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -275,15 +285,37 @@ form{
 }
 
 .result {
+  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
   margin-top: 20px;
   padding: 10px;
-  background-color: #b7c0b0;
-  border: 1px solid #d1d1d1;
-  color: #3c763d;
-  display: none;
+  display: none; /* Asegúrate de controlar la visibilidad adecuadamente */
   text-align: center;
   border-radius: 30px;
   animation: slideInFromTop 0.5s ease-out;
+}
+
+/* Pseudo-elemento para la imagen de fondo */
+.result::before {
+  content: ''; /* Crea el pseudo-elemento */
+  position: absolute; /* Posiciona el pseudo-elemento */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://media.tenor.com/8GgvLjlWbOsAAAAM/chess.gif'); /* Especifica la ruta a tu imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  opacity: 0.1; /* Cambia el valor para ajustar la opacidad de la imagen */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  border-radius: 20px;
+}
+
+.result p, .result h3 {
+  color: rgb(0, 0, 0); /* Color del texto */
+  position: relative; /* Necesario para asegurar que el texto esté en el frente */
+  z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+  opacity: 1; /* Asegúrate de que el texto sea opaco */
 }
 @keyframes slideInFromTop {
   0% {
@@ -364,8 +396,8 @@ input[type="submit"]:hover{
   font-family: sans-serif;
   text-align: justify;
   align-content: center;
-  background-color: #0e0e0e;
-  color:white;
+  background-color: rgba(0, 0, 0, 0.2);
+  color:rgb(0, 0, 0);
   padding: 20px;
   border-radius: 20px;
   margin-left: 30px;
@@ -373,7 +405,8 @@ input[type="submit"]:hover{
   margin-top: 25px;
   width: 40%;
   max-height: 350px;
-  animation: slideInFromRight 0.5s ease-out; /* Ajusta la duración y el suavizado según prefieras */
+  animation: slideInFromRight 0.5s ease-out; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
 }
 /* Animacion de la seccion de contactanos */
@@ -398,4 +431,3 @@ label{
     font-size: 15px;
     margin-top: 10px;
 }
-
