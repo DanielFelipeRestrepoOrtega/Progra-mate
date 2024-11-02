@@ -203,7 +203,7 @@ input[type="email"],
 input[type="tel"], 
 textarea {
     font-family: sans-serif;
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
     padding: 2px;
     background: linear-gradient(135deg, #464646 20%, #141414 80%);
     border: rgb(65, 65, 65) solid 1px;
@@ -285,37 +285,38 @@ form{
 }
 
 .result {
-  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+  position: relative; 
   margin-top: 20px;
   padding: 10px;
-  display: none; /* Asegúrate de controlar la visibilidad adecuadamente */
+  display: none;
   text-align: center;
   border-radius: 30px;
   animation: slideInFromTop 0.5s ease-out;
 }
 
 /* Pseudo-elemento para la imagen de fondo */
+
 .result::before {
-  content: ''; /* Crea el pseudo-elemento */
-  position: absolute; /* Posiciona el pseudo-elemento */
+  content: ''; 
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://media.tenor.com/8GgvLjlWbOsAAAAM/chess.gif'); /* Especifica la ruta a tu imagen */
-  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  opacity: 0.1; /* Cambia el valor para ajustar la opacidad de la imagen */
-  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  background-image: url('https://media.tenor.com/8GgvLjlWbOsAAAAM/chess.gif'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  opacity: 0.1; 
+  z-index: -1;
   border-radius: 20px;
 }
 
 .result p, .result h3 {
-  color: rgb(0, 0, 0); /* Color del texto */
-  position: relative; /* Necesario para asegurar que el texto esté en el frente */
-  z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
-  opacity: 1; /* Asegúrate de que el texto sea opaco */
+  color: rgb(0, 0, 0); 
+  position: relative; 
+  z-index: 1; 
+  opacity: 1;
 }
 @keyframes slideInFromTop {
   0% {
