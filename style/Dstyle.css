@@ -21,29 +21,42 @@ body.dark-mode.bodyy {
     }
   }
 }
-
-/* Mantén tus otras reglas aquí */
 .bodyy {
   background: linear-gradient(to right, #908b8b, #ffffff);
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
-  .cont-pa{
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-  }
 @media (max-width: 768px) {
-    .cont-pa {
-        grid-template-rows: auto auto;
-    }
+  .bodyy {
+    display: block;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  header{
+    width: 100px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        /* Otros estilos para el footer en dispositivos móviles */
+  .footer-content h3 {
+    font-size: 1.5em;
+  }
+
+  .footer-content p {
+    font-size: 0.9em;
+  }
+
+  .social-icons a {
+    font-size: 1em;
+  }
+  .cont-ini2 h1 {
+    font-size: 64px
     }
 }
   
@@ -51,10 +64,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 2%;
   height: 75px;
 }
-
 .logod {
   display: flex;
   align-items: center;
@@ -86,27 +98,6 @@ header {
 .nav-nav a:hover{
   color: #779eaa;
 }
-
-@media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
-  header {
-      flex-direction: column; /* Apila el logo y la navegación */
-      height: auto; /* Permite que el header se ajuste al contenido */
-  }
-
-  .logod img {
-      height: 80px; /* Reduce el tamaño de la imagen en dispositivos pequeños */
-  }
-
-  .nav-nav {
-      margin-right: 0; /* Elimina el margen derecho */
-      flex-direction: column; /* Apila los elementos de navegación */
-  }
-
-  .nav-nav a {
-      padding: 10px; /* Reduce el padding en dispositivos pequeños */
-  }
-}
-
   footer {
     background-color: #3d3d3d;
     color: white;
@@ -162,37 +153,7 @@ header {
   
   .footer-bottom p {
     margin: 0;
-  }
-  
-  /* Media Queries para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .footer-content h3 {
-      font-size: 2em;
-    }
-    
-    .footer-content p {
-      font-size: 1em;
-      margin: 10px 0;
-    }
-    
-    .social-icons a {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .footer-content h3 {
-      font-size: 1.5em;
-    }
-    
-    .footer-content p {
-      font-size: 0.9em;
-    }
-    
-    .social-icons a {
-      font-size: 1em;
-    }
-  }
+  }  
   h1{
     color: #070606;
     font-family: 'Times New Roman', Times, serif;
@@ -243,7 +204,7 @@ header {
   }
   section{
     display: flex;
-    width: 1200px;
+    width: 80%;
     height: 430px;
     margin: 0 auto;
    
@@ -274,26 +235,6 @@ header {
     max-height: 200px;
     color: white;
     padding: 10px;
-  }
-  @media (max-width: 768px) {
-    header{
-      text-align: center;
-    }
-    .nav-link {
-      font-size: 14px;
-  }
-  .logod, .nav-nav {
-      margin: 10px 0;
-  }
-  .logod img {
-    max-width: 100%;
-}
-.nav-nav {
-  display: none;
-}
-.menu-hamburguesa {
-  display: block;
-}
   }
 
   .iconson {
