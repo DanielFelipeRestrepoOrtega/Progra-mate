@@ -1,20 +1,12 @@
-body {
-    background: linear-gradient(135deg, #908b8b, #ffffff);
-    height: 100vh; /* Ajusta la altura al 100% de la viewport */
-    margin: 0;
-    }
-    .cont-pa{
-      display: grid;
-      min-height: 100dvh;
-      grid-template-rows: auto 1fr auto;
+.bodyy {
+    background: linear-gradient(to right, #908b8b, #ffffff);
     }
 
 div{
-    background-color: #3a3838;
-    padding: 40pxs;
+    padding: 40px;
     justify-items: center;
 }
-h1,p{
+h1,p,h3{
     text-align: center;
-    color: white;
+    color: black;
 }
