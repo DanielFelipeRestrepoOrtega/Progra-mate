@@ -153,6 +153,7 @@ header {
 }
 
 footer {
+  margin-top: 20px;
   background-color: #3d3d3d;
   color: white;
   padding: 50px 0;
@@ -205,11 +206,17 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: inline-flex;
 }
 
 .footer-bottom p {
+  margin-left: 50px;
+}
+.footer-bottom a {
   margin: 0;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {

@@ -236,11 +236,17 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 10px;
+  display: inline-flex;
 }
 
 .footer-bottom p {
+  margin-left: 50px;
+}
+.footer-bottom a {
   margin: 0;
+  text-decoration: none;
+  color: white;
 }
 
 /* Media Queries para pantallas más pequeñas */
@@ -257,6 +263,7 @@ footer {
   .social-icons a {
     font-size: 1.2em;
   }
+  
 }
 
 @media (max-width: 480px) {
