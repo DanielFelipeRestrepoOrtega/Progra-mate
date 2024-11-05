@@ -24,6 +24,19 @@ body {
         width: 100%;
         /* Otros estilos para el footer en dispositivos móviles */
     }
+    .nav-link{
+      display: none;
+    }
+    .iconson{
+      display: flex;
+    }
+    .botcata{
+      margin-left: 10px;
+    }
+    .logod{
+      width: 50%;
+      margin-right: 40px;
+    }
     }
     footer {
         background-color: #3d3d3d;
@@ -115,7 +128,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 2%;
         height: 75px;
       }
       
@@ -126,7 +139,6 @@ body {
       
       .logod img {
         height: 200px; /* Ajusta el tamaño según tus necesidades */
-        position: relative;
         margin-top: 20px;
         margin-left: 20px;
         transition: filter 1s ease;
@@ -136,17 +148,18 @@ body {
         background-color: #3d3d3d;
         margin:0 auto;
         padding: 20px;
-        margin-left: 100px;
+        margin-left: 80px;
         border-radius: 20px;
       }
       
       .nav-nav a {
         text-decoration: none;
         color: white;
+        text-align: center;
         text-transform: uppercase;
         font-weight: 500;
         font-size: larger;
-        padding: 30px;
+        padding: 20px;
       }
       .nav-nav a:hover{
         color: #779eaa;
@@ -154,19 +167,18 @@ body {
       
       @media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
         header {
-            flex-direction: column; /* Apila el logo y la navegación */
-            height: auto; /* Permite que el header se ajuste al contenido */
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+          justify-items: center;
+          margin-bottom: 10%; /* Permite que el header se ajuste al contenido */
         }
-      
-        .logod img {
-            height: 80px; /* Reduce el tamaño de la imagen en dispositivos pequeños */
-        }
-      
         .nav-nav {
-            margin-right: 0; /* Elimina el margen derecho */
+            margin-right: 22%; /* Elimina el margen derecho */
             flex-direction: column; /* Apila los elementos de navegación */
         }
-      
         .nav-nav a {
             padding: 10px; /* Reduce el padding en dispositivos pequeños */
         }
@@ -236,16 +248,15 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin: 0 auto;
-  margin-left: 10px;
+  margin-right:15%;
 }
 .botcata{
   border: none;
   padding: 0;
   background: none;
   appearance: none;
-  width: auto;
-  height: 50px;
+  width: 60%;
+  height: 40px;
   cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -430,4 +441,45 @@ label{
     font-weight: 500;
     font-size: 15px;
     margin-top: 10px;
+}
+/* Estilo del contenedor del dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo del botón del dropdown */
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo del contenido del dropdown (oculto por defecto) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Cambia el color del enlace al pasar el mouse */
+.dropdown-content a:hover {
+  background-color: #f3ecec;
+}
+
+/* Muestra el dropdown al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
