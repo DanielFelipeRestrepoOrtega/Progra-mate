@@ -4,7 +4,6 @@ body {
 .bodyy {
   background: linear-gradient(to right, #908b8b, #ffffff);
   height: 100vh;
-
   width: 100%;
   transition: background 1.5s ease, color 1.5s ease;
   }
@@ -37,6 +36,11 @@ body {
       width: 50%;
       margin-right: 40px;
     }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+   
     }
     footer {
         background-color: #3d3d3d;
@@ -109,6 +113,7 @@ body {
         .social-icons a {
           font-size: 1.2em;
         }
+        
       }
       
       @media (max-width: 480px) {
@@ -123,6 +128,7 @@ body {
         .social-icons a {
           font-size: 1em;
         }
+        
       }
       header {
         display: flex;
