@@ -397,3 +397,104 @@ section img:hover {
 }
 
 /* Cambia el color del botón del dropdown al pasar el mouse */
+.carrusel{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.carrusel img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100% !important; /*forzar que tome este estilo y descarte la herencia del estilo*/
+  transition: all 1s linear;
+}
+
+.img_visible{
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+.img_oculto{
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+#siguiente{
+  display: inline-block;
+  vertical-align: top;
+  height: 500px;
+}
+
+#siguiente img{
+  position: relative;
+  display: block;
+  max-width: 100px;
+  height: 100px;
+  top: 35%;
+}
+
+#anterior{
+  display: inline-block;
+  vertical-align: top;
+  height: 500px;
+}
+
+#anterior img{
+  position: relative;
+  display: block;
+  max-width: 100px;
+  height: 100px;
+  top: 35%;
+}
+
+#slider{
+  display: block; 
+  margin-top: 0 auto; 
+  text-align: center;
+}
+
+@media screen and (max-width:800px){ 
+  #siguiente{
+    height: 200px;
+  }
+
+  #siguiente img{
+    max-width: 25px;
+    height: 25px;
+    top: 40%;
+  }
+
+  #anterior{
+    height: 200px;
+  }
+
+  #anterior img{
+    max-width: 25px;
+    height: 25px;
+    top: 45%;
+  }
+}
+
+@media screen and (max-width:550px){ 
+  #siguiente{
+    height: 125px;
+  }
+
+  #siguiente img{
+    max-width: 25px;
+    height: 25px;
+    top: 40%;
+  }
+
+  #anterior{
+    height: 125px;
+  }
+
+  #anterior img{
+    max-width: 25px;
+    height: 25px;
+    top: 45%;
+  }
+}
