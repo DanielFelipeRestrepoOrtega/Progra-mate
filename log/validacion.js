@@ -1,13 +1,25 @@
 // Simulación de base de datos (usuarios) con JSON
 const usuarios = [
     {
-        nombre: 'Nataly',
+        nombre: 'Daniel',
         password: 'clave123'
     },
     {
-        nombre: 'Juan',
-        password: 'contrasena456'
-    }
+        nombre: 'Jhon',
+        password: 'clave123'
+    },
+    {
+         nombre: 'Cristian',
+         password: 'clave123'
+    },
+    {
+         nombre: 'Luis',
+         password: 'clave123'
+    },
+    {
+         nombre: 'Eliseo',
+         password: 'clave123'
+    },
 ];
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
